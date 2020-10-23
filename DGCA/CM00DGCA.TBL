@@ -1,0 +1,22 @@
+create table tb_dgca_rcrd
+(
+    dr_plt_id_v  varchar2(10),
+    dr_flght_nmbr_v varchar2(10),
+    dr_dsgntn_v varchar2(20),
+    dr_src_v varchar2(20),
+    dr_tm_of_dprtr_d date,
+    dr_dstntn_v varchar2(20),
+    dr_pre_bac_perc_n number(4,2),
+    dr_post_bac_perc_n number(4,2),
+    dr_rslt_v varchar2(5)
+);
+
+select * from tb_dgca_rcrd;
+
+drop table tb_dgca_rcrd;
+
+
+
+
+
+

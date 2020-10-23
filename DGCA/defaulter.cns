@@ -1,0 +1,4 @@
+ alter table tb_dfltr
+    add constraint  co_dfltr_pk primary key
+    ( dfltr_plt_id_v)
+ /
