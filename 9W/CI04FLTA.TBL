@@ -1,0 +1,20 @@
+create table tb_flght_admn_bom
+(
+       fabom_flght_nmbr_v varchar(20),
+       fabom_arcrft_typ_v varchar2(20),
+       fabom_cptn_id_v varchar2(20),
+       fabom_mx_spr_sv_n number,
+       fabom_mx_ec_flx_n number,
+       fabom_mx_clb_n number,
+       fabom_jmp_sts_lft_n number
+);
+
+select * from tb_flght_admn_bom;
+insert into tb_flght_admn_bom values('9W222','ATR','9WC001',20,10,4,0);
+insert into tb_flght_admn_bom values('9W812','737-800','9WC110',120,9,10,4);
+insert into tb_flght_admn_bom values('9W420','737-800','9WC170',120,9,10,4);
+insert into tb_flght_admn_bom values('9W231','737-800','9WC010',120,9,10,4);
+insert into tb_flght_admn_bom values('9W001','A 320-231','9WC110',130,20,20,2);
+
+drop table tb_flght_admn_bom;
+

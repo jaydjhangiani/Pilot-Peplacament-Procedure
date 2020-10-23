@@ -1,0 +1,11 @@
+/* Formatted on 6/27/2019 4:26:05 PM (QP5 v5.149.1003.31008) */
+CREATE VIEW Replacement_pilots
+AS
+   SELECT rpbom_plt_id_v,
+          rpbom_dsgntn_v,
+          rpbom_bs_v,
+          rpbom_arcrft_lcns_grd_v,
+          rpbom_avlbl_v
+     FROM tb_rplcmnt_plt_lst_bom;
+
+SELECT * FROM replacement_pilots

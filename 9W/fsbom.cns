@@ -1,0 +1,4 @@
+ alter table tb_flght_schdl_bom
+    add constraint  co_fsbom_pk primary key
+    (  fsbom_flght_nmbr_v)
+ /

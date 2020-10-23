@@ -1,0 +1,16 @@
+create table  tb_flght_schdl_del
+(
+    fsdel_flght_nmbr_v varchar2(10),
+    fsdel_src_v varchar2(20),
+    fsdel_dstntn_v varchar2(20),
+    fsdel_arcrft_typ_v varchar2(20),
+    fsdel_tm_of_dprtr_v date
+);
+insert into tb_flght_schdl_del values('9W921','BENGALURU','DELHI','A 320-231',to_date('2019/06/27 10:00:00','yyyy/mm/dd hh24:mi:ss'));
+insert into tb_flght_schdl_del values('9W525','DELHI','BENGALURU','A 320-231',to_date('2019/06/27 17:00:00','yyyy/mm/dd hh24:mi:ss'));
+insert into tb_flght_schdl_del values('9W231','MUMBAI','DELHI','A 320-231',to_date('2019/06/27 13:30:00','yyyy/mm/dd hh24:mi:ss'));
+insert into tb_flght_schdl_del values('9W420','MUMBAI','DELHI','737-800',to_date('2019/06/27 02:25:00','yyyy/mm/dd hh24:mi:ss'));
+insert into tb_flght_schdl_del values('9W150','DELHI','MUMBAI','A 320-231',to_date('2019/06/27 21:55:00','yyyy/mm/dd hh24:mi:ss'));
+insert into tb_flght_schdl_del values('9W219','DELHI','MUMBAI','737-800',to_date('2019/06/27 10:35:00','yyyy/mm/dd hh24:mi:ss'));
+
+select * from  tb_flght_schdl_del;

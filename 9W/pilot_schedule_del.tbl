@@ -1,0 +1,21 @@
+create table tb_plt_schdl_del
+(
+     psdel_plt_id_v varchar2(10),
+     psdel_flght_nmbr_v varchar2(10),
+     psdel_dsgntn_v varchar2(20),
+     psdel_src_v varchar2(20),
+     psdel_dstntn_v varchar2(20),
+     psdel_tm_of_dprtr_d date,
+     psdel_bac_prc_v number(4,2)
+);
+
+select * from tb_plt_schdl_del;
+
+
+
+insert into tb_plt_schdl_del values ('9WC112','9W150','COMMANDER','DELHI','MUMBAI',TO_DATE('2019/06/27 21:25:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_del values ('9WC120','9W150','CO PILOT','DELHI','MUMBAI',TO_DATE('2019/06/27 21:25:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_del values ('9WC555','9W219','CO PILOT','DELHI','MUMBI',TO_DATE('2019/06/27 10:35:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_del values ('9WC155','9W219','COMMANDER','DELHI','MUMBI',TO_DATE('2019/06/27 10:35:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_del values ('9WC678','9W525','COMMANDER','DELHI','BENGALURU',TO_DATE('2019/06/27 17:00:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_del values ('9WC288','9W525','CO PILOT','DELHI','BENGALURU',TO_DATE('2019/06/27 17:00:00','yyyy/mm/dd hh24:mi:ss'), -1);

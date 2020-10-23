@@ -1,0 +1,23 @@
+create table tb_flght_lst_mstr
+(
+    flm_flght_nmbr_v varchar2(10),
+    flm_src_v varchar2(20),
+    flm_dstntn_v varchar2(20),
+    flm_stts_v varchar2(20)
+);
+
+insert into tb_flght_lst_mstr values('9W1910','BENGALURU','MUMBAI','');
+insert into tb_flght_lst_mstr values('9W222','MUMBAI','BENGALURU','');
+insert into tb_flght_lst_mstr values('9W921','BENGALURU','DELHI','');
+insert into tb_flght_lst_mstr values('9W525','DELHI','BENGALURU','');
+insert into tb_flght_lst_mstr values('9W812','MUMBAI','BENGALURU','');
+insert into tb_flght_lst_mstr values('9W231','MUMBAI','DELHI','');
+insert into tb_flght_lst_mstr values('9W420','MUMBAI','DELHI','');
+insert into tb_flght_lst_mstr values('9W150','DELHI','MUMBAI','');
+insert into tb_flght_lst_mstr values('9W219','DELHI','MUMBAI','');
+insert into tb_flght_lst_mstr values('9W077','BENGALURU','MUMBAI','');
+
+
+
+select * from tb_flght_lst_mstr;
+--DROP TABLE tb_flght_lst_mstr;

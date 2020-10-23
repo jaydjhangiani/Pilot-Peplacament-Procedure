@@ -1,0 +1,59 @@
+CREATE TABLE tb_rplcmnt_plt_lst_blr
+(
+   rpblr_plt_id_v            VARCHAR2 (20),
+   rpblr_dsgntn_v            VARCHAR2 (20),
+   rpblr_bs_v                VARCHAR2 (20),
+   rpblr_arcrft_lcns_grd_v   VARCHAR2 (20),
+   rpblr_prrty_n             NUMBER,
+   rpblr_avlbl_v             VARCHAR2 (20)
+);
+
+INSERT INTO tb_rplcmnt_plt_lst_blr
+     VALUES ('9WC666',
+             'COMMANDER',
+             'BENGALURU',
+             'GRADE 3',
+             1,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_blr
+     VALUES ('9WC459',
+             'COMMANDER',
+             'BENGALURU',
+             'GRADE 2',
+             1,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_blr
+     VALUES ('9WC180',
+             'COMMANDER',
+             'BENGALURU',
+             'GRADE 1',
+             2,
+             'NO');
+
+INSERT INTO tb_rplcmnt_plt_lst_blr
+     VALUES ('9WC679',
+             'CO PILOT',
+             'BENGALURU',
+             'GRADE 3',
+             1,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_blr
+     VALUES ('9WC484',
+             'COMMANDER',
+             'BENGALURU',
+             'GRADE 2',
+             2,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_blr
+     VALUES ('9WC982',
+             'CO PILOT',
+             'BENGALURU',
+             'GRADE 2',
+             3,
+             'YES');
+
+SELECT * FROM tb_rplcmnt_plt_lst_blr;

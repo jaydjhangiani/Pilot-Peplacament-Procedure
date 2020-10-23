@@ -1,0 +1,53 @@
+CREATE TABLE tb_rplcmnt_plt_lst_del
+(
+   rpdel_plt_id_v            VARCHAR2 (20),
+   rpdel_dsgntn_v            VARCHAR2 (20),
+   rpdel_bs_v                VARCHAR2 (20),
+   rpdel_arcrft_lcns_grd_v   VARCHAR2 (20),
+   rpdel_prrty_n             NUMBER,
+   rpdel_avlbl_v             VARCHAR2 (20)
+);
+
+INSERT INTO tb_rplcmnt_plt_lst_del
+     VALUES ('9WC066',
+             'COMMANDER',
+             'DELHI',
+             'GRADE 3',
+             1,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_del
+     VALUES ('9WC954',
+             'COMMANDER',
+             'DELHI',
+             'GRADE 2',
+             1,
+             'YES');
+
+
+
+INSERT INTO tb_rplcmnt_plt_lst_del
+     VALUES ('9WC069',
+             'CO PILOT',
+             'DELHI',
+             'GRADE 3',
+             1,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_del
+     VALUES ('9WC099',
+             'COMMANDER',
+             'DELHI',
+             'GRADE 2',
+             2,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_del
+     VALUES ('9WC980',
+             'CO PILOT',
+             'DELHI',
+             'GRADE 2',
+             3,
+             'YES');
+
+SELECT * FROM tb_rplcmnt_plt_lst_del;

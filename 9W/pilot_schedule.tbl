@@ -1,0 +1,27 @@
+create table tb_plt_schdl_bom
+(
+     psbom_plt_id_v varchar2(10),
+     psbom_flght_nmbr_v varchar2(10),
+     psbom_dsgntn_v varchar2(20),
+     psbom_src_v varchar2(20),
+     psbom_dstntn_v varchar2(20),
+     psbom_tm_of_dprtr_d date,
+     psbom_bac_prc_v number(4,2)
+);
+
+drop table tb_plt_schdl_bom;
+SELECT * FROM tb_plt_schdl_bom order by PSBOM_TM_OF_DPRTR_D;
+insert into tb_plt_schdl_bom values ('9WC001','9W222','COMMANDER','MUMBAI','BENGALURU',TO_DATE('2019/06/27 01:45:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_bom values ('9WC125','9W222','CO PILOT','MUMBAI','BENGALURU',TO_DATE('2019/06/27 01:45:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_bom values ('9WC110','9W812','COMMANDER','MUMBAI','BENGALURU',TO_DATE('2019/06/27 16:45:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_bom values ('9WC210','9W812','CO PILOT','MUMBAI','BENGALURU',TO_DATE('2019/06/27 16:45:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_bom values ('9WC010','9W231','COMMANDER','MUMBAI','DELHI',TO_DATE('2019/06/27 13:30:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_bom values ('9WC610','9W231','CO PILOT','MUMBAI','DELHI',TO_DATE('2019/06/27 13:30:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_bom values ('9WC170','9W420','COMMANDER','MUMBAI','DELHI',TO_DATE('2019/06/27 02:15:00','yyyy/mm/dd hh24:mi:ss'), -1);
+insert into tb_plt_schdl_bom values ('9WC710','9W420','CO PILOT','MUMBAI','DELHI',TO_DATE('2019/06/27 02:15:00','yyyy/mm/dd hh24:mi:ss'), -1);
+
+
+
+
+
+update tb_plt_schdl_bom set psbom_dstntn_v = 'MUMBAI' where psbom_dstntn_v = 'MUMBI' 

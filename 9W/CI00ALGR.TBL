@@ -1,0 +1,13 @@
+create table  tb_arcrft_lcns_grd
+(
+    al_grd_v varchar2(20),
+    al_arcrft_typ_v varchar2(20)
+);
+
+insert into tb_arcrft_lcns_grd values('GRADE 1','ATR');
+insert into tb_arcrft_lcns_grd values('GRADE 2','A 320-231');
+insert into tb_arcrft_lcns_grd values('GRADE 3','737-800');
+select * FROM   tb_arcrft_lcns_grd order by AL_GRD_V;
+
+
+

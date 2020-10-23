@@ -1,0 +1,67 @@
+/* Formatted on 6/27/2019 4:14:30 PM (QP5 v5.149.1003.31008) */
+CREATE TABLE tb_rplcmnt_plt_lst_bom
+(
+   rpbom_plt_id_v            VARCHAR2 (20),
+   rpbom_dsgntn_v            VARCHAR2 (20),
+   rpbom_bs_v                VARCHAR2 (20),
+   rpbom_arcrft_lcns_grd_v   VARCHAR2 (20),
+   rpbom_prrty_n             NUMBER,
+   rpbom_avlbl_v             VARCHAR2 (20)
+);
+
+INSERT INTO tb_rplcmnt_plt_lst_bom
+     VALUES ('9WC372',
+             'COMMANDER',
+             'MUMBAI',
+             'GRADE 3',
+             1,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_bom
+     VALUES ('9WC450',
+             'COMMANDER',
+             'MUMBAI',
+             'GRADE 2',
+             1,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_bom
+     VALUES ('9WC080',
+             'COMMANDER',
+             'MUMBAI',
+             'GRADE 1',
+             2,
+             'NO');
+
+INSERT INTO tb_rplcmnt_plt_lst_bom
+     VALUES ('9WC675',
+             'CO PILOT',
+             'MUMBAI',
+             'GRADE 3',
+             1,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_bom
+     VALUES ('9WC444',
+             'COMMANDER',
+             'MUMBAI',
+             'GRADE 2',
+             2,
+             'YES');
+
+INSERT INTO tb_rplcmnt_plt_lst_bom
+     VALUES ('9WC912',
+             'CO PILOT',
+             'MUMBAI',
+             'GRADE 2',
+             3,
+             'YES');
+
+SELECT * FROM tb_rplcmnt_plt_lst_bom;
+
+DELETE FROM tb_rplcmnt_plt_lst_bom
+      WHERE RPBOM_ARCRFT_LCNS_GRD_V = 'GRADE 2' AND RPBOM_PRRTY_N = 1;
+
+DROP TABLE tb_rplcmnt_plt_lst_bom;
+
+
