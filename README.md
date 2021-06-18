@@ -1,4 +1,4 @@
-# Pilot Peplacament Procedure and Roster Updation
+# Pilot Replacament Procedure and Roster Updation
 
 Table creation for Pilot Master with ID, Grade, Base, Licensing.
 
